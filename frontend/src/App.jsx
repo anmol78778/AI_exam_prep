@@ -27,6 +27,7 @@ const dispatch = useDispatch()
           <Route path="/notes" element={userData ? <Notes/> : <Navigate to="/auth" replace /> } />
           <Route path="/pricing" element={userData ? <Pricing/> : <Navigate to="/auth" replace /> } />
       </Routes>
+
     </>
   )
 }
