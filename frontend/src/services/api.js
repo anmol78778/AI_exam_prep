@@ -1,6 +1,6 @@
 import axios from "axios"
 import { serverUrl } from "../App"
-// import { setUserData } from "../redux/userSlice"
+import { setUserData } from "../redux/userSlice"
 
 export const getCurrentUser = async (dispatch) => {
     try {
