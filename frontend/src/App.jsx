@@ -9,7 +9,7 @@ import PaymentSuccess from './pages/PaymentSuccess'
 import PaymentFailed from './pages/PaymentFailed'
 import { getCurrentUser } from './services/api'
 import { useDispatch, useSelector } from 'react-redux'
-export const serverUrl = "http://localhost:8000"
+export const serverUrl = "https://ai-exam-prep-server.onrender.com"
 
 
 function App() {
