@@ -6,6 +6,7 @@ import connectDb from './utils/connectDb.js';
 import authRouter from './routes/auth.route.js';
 import userRouter from './routes/user.route.js';
 import notesRouter from './routes/generate.route.js';
+import pdfRouter from './routes/pdf.route.js';
 dotenv.config();
 
 const app = express();
@@ -30,6 +31,7 @@ app.get('/', (req, res) => {
 app.use("/api/auth",authRouter)
 app.use("/api/user",userRouter)
 app.use("/api/notes", notesRouter)
+app.use("/api/pdf", pdfRouter)
 
 
 app.listen(PORT, () => {
